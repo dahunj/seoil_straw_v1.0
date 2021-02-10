@@ -1,0 +1,221 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SeoilVision - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Master\LOCALS~1\Temp\RSPD7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "C:\Program Files\OpenCV\cxcore\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/SeoilVision.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\INSParam.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection1.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVision.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SetCam.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SetTrigger.cpp"
+"C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Master\LOCALS~1\Temp\RSPD7.tmp" 
+Creating temporary file "C:\DOCUME~1\Master\LOCALS~1\Temp\RSPD8.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/SeoilVision.pdb" /machine:I386 /out:"Release/SeoilVision.exe" 
+".\Release\CannyDetect.obj"
+".\Release\com_serial.obj"
+".\Release\ControlCamera.obj"
+".\Release\ControlSol.obj"
+".\Release\DateTime.obj"
+".\Release\GetPicture.obj"
+".\Release\INSParam.obj"
+".\Release\inspectimage.obj"
+".\Release\InspectSettingDlg.obj"
+".\Release\InspResult.obj"
+".\Release\Labeling.obj"
+".\Release\LightControl.obj"
+".\Release\Log.obj"
+".\Release\PreInspection.obj"
+".\Release\PreInspection1.obj"
+".\Release\SeoilMonitoring.obj"
+".\Release\SeoilVision.obj"
+".\Release\SeoilVisionDlg.obj"
+".\Release\SetCam.obj"
+".\Release\SetColorDlg.obj"
+".\Release\SetTrigger.obj"
+".\Release\StdAfx.obj"
+".\Release\StrawProcess.obj"
+".\Release\TLightForm.obj"
+".\Release\SeoilVision.res"
+".\Lib\cv.lib"
+".\Lib\cvaux.lib"
+".\Lib\cvcam.lib"
+".\Lib\cvd_i7.lib"
+".\Lib\cvhaartraining.lib"
+".\Lib\cxcore.lib"
+".\Lib\cxcored_i7.lib"
+".\Lib\cxts.lib"
+".\Lib\highgui.lib"
+".\Lib\ml.lib"
+".\Lib\PCI-Dask.lib"
+".\Lib\newflycap\PGRFlyCapture.lib"
+".\Lib\newflycap\pgrflycapturegui.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Master\LOCALS~1\Temp\RSPD8.tmp"
+<h3>Output Window</h3>
+Compiling...
+GetPicture.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../sol/resource.h(10) : warning C4005: 'IDC_BUTTON1' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../resource.h(35) : see previous definition of 'IDC_BUTTON1'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../sol/resource.h(11) : warning C4005: 'IDC_BUTTON2' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../resource.h(37) : see previous definition of 'IDC_BUTTON2'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(1570) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(1579) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(1750) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(1758) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(1703) : warning C4101: 'limit2' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(1703) : warning C4101: 'limit1' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(2421) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(2509) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(2517) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(2525) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+INSParam.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes/StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+inspectimage.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(441) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(442) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(674) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(675) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1034) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1035) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1396) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1397) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1398) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1399) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1417) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1418) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1419) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1420) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1908) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1920) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1931) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1942) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1956) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(1957) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2011) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2022) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2029) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2034) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2072) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2104) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2157) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2169) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2177) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2186) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2220) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2259) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2317) : warning C4035: 'DoInspection' : no return value
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2114) : warning C4101: 'limit2' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2114) : warning C4101: 'limit1' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2325) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2326) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\inspectimage.cpp(2755) : warning C4305: '=' : truncation from 'const double' to 'float'
+PreInspection.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../sol/resource.h(10) : warning C4005: 'IDC_BUTTON1' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../resource.h(35) : see previous definition of 'IDC_BUTTON1'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../sol/resource.h(11) : warning C4005: 'IDC_BUTTON2' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\../resource.h(37) : see previous definition of 'IDC_BUTTON2'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(911) : warning C4101: 'line' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(910) : warning C4101: 'fdata' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(909) : warning C4101: 'data' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(909) : warning C4101: 'threshold' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(1078) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(1085) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(1092) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(1099) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\PreInspection.cpp(1106) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+PreInspection1.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+SeoilVision.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes/StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(10) : warning C4005: 'IDC_BUTTON1' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(35) : see previous definition of 'IDC_BUTTON1'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(11) : warning C4005: 'IDC_BUTTON2' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(37) : see previous definition of 'IDC_BUTTON2'
+SeoilVisionDlg.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes/StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(10) : warning C4005: 'IDC_BUTTON1' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(35) : see previous definition of 'IDC_BUTTON1'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(11) : warning C4005: 'IDC_BUTTON2' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(37) : see previous definition of 'IDC_BUTTON2'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp(1508) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp(1524) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp(1838) : warning C4101: 'a' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp(1838) : warning C4101: 'b' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp(1838) : warning C4101: 'c' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\SeoilVisionDlg.cpp(1838) : warning C4101: 'd' : unreferenced local variable
+SetCam.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes/StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(10) : warning C4005: 'IDC_BUTTON1' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(35) : see previous definition of 'IDC_BUTTON1'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(11) : warning C4005: 'IDC_BUTTON2' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(37) : see previous definition of 'IDC_BUTTON2'
+SetTrigger.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes/StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(10) : warning C4005: 'IDC_BUTTON1' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(35) : see previous definition of 'IDC_BUTTON1'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\sol/resource.h(11) : warning C4005: 'IDC_BUTTON2' : macro redefinition
+        C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\resource.h(37) : see previous definition of 'IDC_BUTTON2'
+StrawProcess.cpp
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.h(25) : warning C4005: '_PC' : macro redefinition
+        C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\tchar.h(776) : see previous definition of '_PC'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(395) : warning C4101: 'nCnt' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(643) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(787) : warning C4244: 'argument' : conversion from 'const double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(788) : warning C4244: 'argument' : conversion from 'const double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1393) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1393) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1452) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1452) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1539) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1540) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1818) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1821) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1909) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1910) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1585) : warning C4101: 'pastSlide_d' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(1585) : warning C4101: 'pastSlide' : unreferenced local variable
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(3620) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(3621) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(3677) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(3695) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(4066) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+Generating Code...
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(350) : warning C4715: 'CStrawProcess::SetColorImage' : not all control paths return a value
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(3961) : warning C4700: local variable 'gabbackimul' used without having been initialized
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\StrawProcess.cpp(4199) : warning C4715: 'CStrawProcess::SetColorImageByCOI2by1' : not all control paths return a value
+C:\Documents and Settings\Master\πŸ≈¡ »≠∏È\MACHINE\CODE\SeoilezVision_v5.055\classes\GetPicture.cpp(330) : warning C4700: local variable 'cam_num' used without having been initialized
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+SeoilVision.exe - 0 error(s), 111 warning(s)
+</pre>
+</body>
+</html>

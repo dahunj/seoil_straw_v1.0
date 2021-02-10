@@ -1,0 +1,815 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SeoilVision.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SeoilVision.ico"
+IDI_ICO_MAIN2           ICON                    "res\\SeoilVision2.ico"
+IDI_ICO_MAIN1           ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SeoilVision Á¤º¸"
+FONT 9, "±¼¸²"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SeoilVision ¹öÀü 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "È®ÀÎ(ü¬ìã)",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SEOILVISION_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SeoilVision_1¹ø Ä«¸Þ¶ó"
+MENU IDR_MAINMENU
+FONT 9, "±¼¸²", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RICHED_RESULT,"RICHEDIT",TCS_VERTICAL | TCS_RAGGEDRIGHT | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,222,15,91,164
+END
+
+IDD_INSPECT_SETTING DIALOGEX 0, 0, 853, 456
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "°Ë»çÄ¡ ¼³Á¤"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Ãë¼Ò(Cancle)",IDCANCEL,796,435,50,14
+    LTEXT           "ÇØ»óµµ[ú°à°Óø] (mm / pix)",IDC_STATIC,20,18,87,8
+    CONTROL         "¸¶±¸¸® °Ë»ç À¯¹«[ÞÅéÄÓ®ÔéËþö´]",IDC_MAGURI_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,112,128,10
+    EDITTEXT        IDC_MAGURI_SLIDE,656,368,40,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "¸¶±¸¸® ±æÀÌ[Ó®ÔéíþÓø](pix)",IDC_STATIC,26,127,93,8
+    LTEXT           "¸¶±¸¸® ±æÀÌ Â÷ÀÌ[Ó®ÔéíþÓøó¬ì¶](¹è¼ö[ÛÃâ¦])",IDC_STATIC,26,144,153,8
+    EDITTEXT        IDC_MAGURI_LENGTH,191,126,24,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Ãà°ü °Ë»ç À¯¹«[ÞÅéÄõêÎ·Ëþö´]",IDC_CHUCK_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,275,120,10
+    LTEXT           "Ãà°ü ÃÖ¼ÒÄ¡[õêÎ·õÌá³ö·] (mm)",IDC_STATIC,27,290,105,8
+    EDITTEXT        IDC_MINCHUCK,207,286,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÀÚ¹Ù¶ó °Ë»ç À¯¹«[ÞÅéÄã¨õÔËþö´]",IDC_JABARA_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,162,128,10
+    LTEXT           "ÀÚ¹Ù¶ó ½Äº° ¹à±â[ã¨õÔãÛÜ¬ÕÕÓø](%)",IDC_STATIC,26,178,123,8
+    LTEXT           "ÀÚ¹Ù¶ó °³¼ö[ã¨õÔâ¦Õá]",IDC_STATIC,26,194,79,8
+    LTEXT           "ÀÚ¹Ù¶ó µÎ²² Ç¥ÁØÆíÂ÷[ã¨õÔý§ÓøøöñÞø¶ó¬]",IDC_STATIC,26,228,145,8
+    LTEXT           "ÀÚ¹Ù¶ó °Å¸® Ç¥ÁØÆíÂ÷[ã¨õÔíþÓøøöñÞø¶ó¬]",IDC_STATIC,26,245,145,8
+    EDITTEXT        IDC_JABARA_RECOG,207,175,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_JABARA_NUM,207,192,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_JABARA_WIDTH_STDEV,207,226,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_JABARA_DISTANCE_STDEV,207,244,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_RESOL,204,14,40,14,ES_AUTOHSCROLL
+    CONTROL         "Æø °Ë»ç À¯¹«",IDC_POK_OK,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,612,356,60,10
+    EDITTEXT        IDC_POK,655,381,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_POK_LIMIT,656,394,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "¿ª»ð °Ë»ç À¯¹«[ÞÅéÄÓîßºìýËþö´]",IDC_INSERT_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,320,128,10
+    LTEXT           "Á¤»ó »ðÀÔ ±â¿ï±â[ïáßÈßºìýÞØÓø]",IDC_STATIC,27,335,113,8
+    LTEXT           "»ÏÁ·ÇÑ ºÎºÐÀÇ ±æÀÌ[ôÓð¢íþÓø] (pix)",IDC_STATIC,27,349,121,8
+    EDITTEXT        IDC_INSERT_SLIDE,207,329,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SLIDE_LENGTH,207,346,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÁÂÃø °¢ °Ë»ç À¯¹«",IDC_ANGLE_1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,614,345,78,10
+    EDITTEXT        IDC_ANGLELIMIT_1,656,354,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "¿ìÃø °¢ °Ë»ç À¯¹«",IDC_ANGLE_2,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,612,335,78,10
+    EDITTEXT        IDC_ANGLELIMIT_2,656,405,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ANGLE_DIFF,670,339,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "ÀÚ¹Ù¶ó ±â¿ï±â Ç¥ÁØÆíÂ÷",IDC_STATIC,704,391,85,8,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_JABARA_GRADIENT_STDEV,798,390,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "ÀÚ¹Ù¶ó ³ôÀÌ Â÷ÀÌ[ã¨õÔÍÔÓøó¬ì¶](pix)",IDC_STATIC,26,261,127,8
+    EDITTEXT        IDC_JABARA_NEIGHBOR,207,260,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "¿¡Æ¼ÄÏ °Ë»ç À¯¹«",IDC_ETIQUETTE_OK,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,592,439,76,10
+    LTEXT           "¿¡Æ¼ÄÏ ½Äº° ¹à±â(%)",IDC_STATIC,715,350,71,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "¿¡Æ¼ÄÏ ¿ìÃø À§Ä¡(%)",IDC_STATIC,715,367,71,8,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ETIQUETTE_RECOG,806,349,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ETIQUETTE_POSITION,806,366,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Ä«¸Þ¶ó °¡·Î[ç¯ßÀíþÓø] (pix)",IDC_STATIC,20,35,95,8
+    LTEXT           "Ä«¸Þ¶ó ¼¼·Î(ç¯ßÀÍÔÓø) (pix)",IDC_STATIC,20,55,95,8
+    LTEXT           "Æ®¸®°Å[Trigger] (trig / pitch)",IDC_STATIC,20,75,90,8
+    LTEXT           "°Ë»çÇÒ ÇÇÄ¡ ¼ö[Ëþö´Õ¢Ëåâ¦]",IDC_STATIC,21,94,97,8
+    EDITTEXT        IDC_CAM_WIDTH,204,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_HEIGHT,204,52,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRIGGER,204,73,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PITCH,204,92,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Ä«¸Þ¶ó Á¤º¸[ßÓÑ¦ãáãÓ]",IDC_STATIC,15,7,236,102
+    LTEXT           "ÀÚ¹Ù¶ó °³¼ö Çã¿ë ¿ÀÂ÷[ëÃúÉã¨õÔâ¦Õáè¦ó¬]",IDC_STATIC,26,211,147,8
+    EDITTEXT        IDC_JABARA_MARGIN_OF_ERROR,207,209,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÀÌ¹° »ó´Ü °Ë»ç À¯¹«[ÞÅéÄß¾Ó®ì¶ÚªËþö´]",IDC_IMUL1_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,14,154,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,28,178,8
+    EDITTEXT        IDC_IMUL_PIX,446,26,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÀÌ¹° Áß´Ü °Ë»ç À¯¹«[ÞÅéÄñéÓ¨ì¶ÚªËþö´]",IDC_IMUL_MID_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,93,154,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,107,178,8
+    EDITTEXT        IDC_IMUL_MID_PIX,446,105,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÀÌ¹° ÀÚ¹Ù¶ó °Ë»ç À¯¹«[ÞÅéÄã¨õÔì¶ÚªËþö´]",IDC_IMUL_JABARA_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,184,162,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,198,178,8
+    EDITTEXT        IDC_IMUL_JABARA_PIX,446,195,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÀÌ¹° Ãà°ü °Ë»ç À¯¹«[ÞÅéÄõêÎ·ì¶ÚªËþö´]",IDC_IMUL_CHUCK_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,231,154,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,245,178,8
+    EDITTEXT        IDC_IMUL_CHUCK_PIX,446,242,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "ÀÌ¹° ³»Ãø °Ë»ç À¯¹«[ÞÅéÄÒ®Î·ì¶ÚªËþö´]",IDC_IMUL_INSERT_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,277,154,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,291,178,8
+    EDITTEXT        IDC_IMUL_INSERT_PIX,446,288,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_TOP_THRESHOLD,499,26,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_MID_THRESHOLD,499,105,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_JABARA_THRESHOLD,499,195,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_CHUCK_THRESHOLD,499,242,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_INSERT_THRESHOLD,499,288,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "¿¡Æ¼ÄÏ ½Äº° Å©±â(pix)",IDC_STATIC,715,335,75,8,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ETIQUETTE_SIZE,806,332,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,45,129,8
+    EDITTEXT        IDC_IMUL_TOP_MASK,446,43,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,123,129,8
+    EDITTEXT        IDC_IMUL_MID_MASK,446,122,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,212,129,8
+    EDITTEXT        IDC_IMUL_JABARA_MASK,446,211,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,259,129,8
+    EDITTEXT        IDC_IMUL_CHUCK_MASK,446,258,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,305,129,8
+    EDITTEXT        IDC_IMUL_INSERT_MASK,446,305,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ³»Ãø ¿µ¿ª(ÀÌ¹° ³»Ãø ¿µ¿ª) (%)",IDC_STATIC,267,321,121,8
+    EDITTEXT        IDC_IMUL_INSERT_POS,446,321,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,491,29,8,8
+    LTEXT           "/",IDC_STATIC,491,108,8,8
+    LTEXT           "/",IDC_STATIC,491,198,8,8
+    LTEXT           "/",IDC_STATIC,491,244,8,8
+    LTEXT           "/",IDC_STATIC,491,290,8,8
+    CONTROL         "°æ°è °Ë»ç À¯¹«[ÞÅéÄÌÑÍ£Ëþö´]",IDC_JABARA_EDGE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,162,120,10
+    LTEXT           "Ãà°ü ÃÖ´ëÄ¡[õêÎ·õÌÓÞö·] (mm)",IDC_STATIC,27,303,105,8
+    EDITTEXT        IDC_MAXCHUCK,207,301,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_TOP_MASK_COLS,499,43,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,491,45,8,8
+    CONTROL         "¿·¸é °Ë»ç À¯¹«(ÞÅéÄö°ØüËþö´)",IDC_MAGURI_SIDE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,112,120,10
+    CONTROL         "¸¶±¸¸® ÂïÈû °Ë»ç À¯¹«[ÞÅéÄÓ®Ôéäâß¿Ëþö´]",IDC_MAGURI_ANGLE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,558,14,162,10
+    LTEXT           "°Ë»ç ±æÀÌ[Ëþö´íþÓø](pix) / Áö¼Ó ±æÀÌ[Ö§áÙíþÓø](pix)",IDC_STATIC,567,28,175,8
+    EDITTEXT        IDC_MAGURI_ANGLE_GAP,745,26,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Áß´Ü ÂïÈû °Ë»ç À¯¹«[ÞÅéÄñéÓ®äâß¿Ëþö´]",IDC_MID_ANGLE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,558,105,154,10
+    LTEXT           "°Ë»ç ±æÀÌ[Ëþö´íþÓø](pix) / Áö¼Ó ±æÀÌ[Ö§áÙíþÓø](pix)",IDC_STATIC,567,119,175,8
+    EDITTEXT        IDC_MID_ANGLE_GAP,745,117,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "»ó´Ü ÂïÈû °Ë»ç À¯¹«[ÞÅéÄß¾Ó®äâß¿Ëþö´]",IDC_TOP_ANGLE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,558,60,154,10
+    LTEXT           "°Ë»ç ±æÀÌ[Ëþö´íþÓø](pix) / Áö¼Ó ±æÀÌ[Ö§áÙíþÓø](pix)",IDC_STATIC,567,74,175,8
+    EDITTEXT        IDC_TOP_ANGLE_GAP,745,71,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Ãà°ü ÂïÈû °Ë»ç À¯¹«[ÞÅéÄ?Î·äâß¿Ëþö´]",IDC_CHUCK_ANGLE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,558,155,150,10
+    LTEXT           "°Ë»ç ±æÀÌ[Ëþö´íþÓø](pix) / Áö¼Ó ±æÀÌ[Ö§áÙíþÓø](pix)",IDC_STATIC,567,169,175,8
+    EDITTEXT        IDC_CHUCK_ANGLE_GAP,745,166,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "³»Ãø ÂïÈû °Ë»ç À¯¹«[ÞÅéÄÒ®Î·äâß¿Ëþö´]",IDC_INSERT_ANGLE_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,558,201,154,10
+    EDITTEXT        IDC_MAGURI_ANGLE_CONTINUOUS,798,26,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MID_ANGLE_CONTINUOUS,798,117,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_TOP_ANGLE_CONTINUOUS,798,71,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CHUCK_ANGLE_CONTINUOUS,798,166,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÂïÈû Á¤µµ[äâß¿ïïÓø](pix)",IDC_STATIC,567,45,85,8
+    EDITTEXT        IDC_MAGURI_ANGLE_DIFF,745,43,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÂïÈû Á¤µµ[äâß¿ïïÓø](pix) / Æø Â÷ÀÌ[Î°Óøó¬ì¶](pix)",IDC_STATIC,567,135,167,8
+    LTEXT           "ÂïÈû Á¤µµ[äâß¿ïïÓø](pix) / Æø Â÷ÀÌ[Î°Óøó¬ì¶](pix)",IDC_STATIC,567,88,167,8
+    LTEXT           "ÂïÈû Á¤µµ[äâß¿ïïÓø](pix) / Æø Â÷ÀÌ[Î°Óøó¬ì¶](pix)",IDC_STATIC,567,183,167,8
+    LTEXT           "/",IDC_STATIC,790,29,8,8
+    LTEXT           "/",IDC_STATIC,790,120,8,8
+    LTEXT           "/",IDC_STATIC,790,74,8,8
+    LTEXT           "/",IDC_STATIC,790,168,8,8
+    EDITTEXT        IDC_MID_ANGLE_DIFF,745,133,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MID_ANGLE_HEIGHT_DIFF,798,133,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,790,136,8,8
+    EDITTEXT        IDC_TOP_ANGLE_DIFF,745,87,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_TOP_ANGLE_HEIGHT_DIFF,798,87,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,790,90,8,8
+    EDITTEXT        IDC_CHUCK_ANGLE_DIFF,745,182,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CHUCK_ANGLE_HEIGHT_DIFF,798,182,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,790,184,8,8
+    EDITTEXT        IDC_MAGURI_DIFF_RATIO,208,143,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "~",IDC_STATIC,219,130,8,8
+    EDITTEXT        IDC_MAGURI_MAX_LENGTH,225,126,23,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_CHUCK_MASK_COLS,499,258,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,491,260,8,8
+    CONTROL         "ÀÌ¹° ÁÂÃø ¿¡Æ¼ÄÏ °Ë»ç À¯¹«[ÞÅéÄñ§èêðËËþö´]",IDC_IMUL_ETQ_LEFT_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,341,172,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,356,178,8
+    EDITTEXT        IDC_IMUL_ETQ_LEFT_PIX,446,353,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_ETQ_LEFT_THRESHOLD,499,353,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,371,129,8
+    EDITTEXT        IDC_IMUL_ETQ_LEFT_MASK,446,370,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,491,356,8,8
+    CONTROL         "ÀÌ¹° ¿ìÃø ¿¡Æ¼ÄÏ °Ë»ç À¯¹«[ÞÅéÄéÓèêðËËþö´]",IDC_IMUL_ETQ_RIGHT_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,392,172,10
+    LTEXT           "ÀÌ¹° Çã¿ë Å©±â[ì¶Úªé»úÉÓÞá³] (pix) / ¹à±â[ÕÕÓø] (GV)",IDC_STATIC,267,406,178,8
+    EDITTEXT        IDC_IMUL_ETQ_RIGHT_PIX,446,404,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_ETQ_RIGHT_THRESHOLD,499,404,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÀÌ¹° ¸¶½ºÅ© Å©±â[Ëþö´ØüîÝÓÞá³] (pix)",IDC_STATIC,267,422,129,8
+    EDITTEXT        IDC_IMUL_ETQ_RIGHT_MASK,446,421,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,491,407,8,8
+    DEFPUSHBUTTON   "0À¸·Î ÃÊ±âÈ­(Set Zero)",IDRESET,757,419,89,14
+    DEFPUSHBUTTON   "È®ÀÎ(ü¬ìã)",IDOK,746,435,50,14
+    LTEXT           "±â¸§¶ì ÀÌ¹° °ËÃâ ºñÀ²(êúÓáËþõóÝïáã)(%)",IDC_STATIC,267,79,141,8
+    LTEXT           "±â¸§¶ì °ËÃâ ºñÀ²(êúÓáËþõóÝïáã)(%)",IDC_STATIC,267,154,123,8
+    EDITTEXT        IDC_IMUL_TOP_PERSENT,446,77,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_MID_PERSENT,446,154,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "±â¸§¶ì Çã¿ë Å©±â(êúÓáëÃúÉÓÞá³) (pix)",IDC_STATIC,267,62,129,8
+    EDITTEXT        IDC_IMUL_TOP_SIZE,446,60,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_IMUL_MID_SIZE,446,138,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "±â¸§¶ì Çã¿ë Å©±â(êúÓáëÃúÉÓÞá³) (pix)",IDC_STATIC,267,138,129,8
+    LTEXT           "Áß´Ü ¿ìÃø ºñ°Ë¿µ¿ª(ñéÓ«éÓö°ÞªËþÞÛÖÅæ´) (pix)",IDC_STATIC,267,170,161,8
+    EDITTEXT        IDC_IMUL_MID_NOT,446,170,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ºñ°Ë»ç ¿µ¿ª(ÞªËþÞÛÖÅæ´)",IDC_STATIC,567,244,87,8
+    EDITTEXT        IDC_INSERT_NOT,745,243,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÂïÈû Çã¿ë Á¤µµ(pix)[äâß¿ëÃúÉïïÓø]",IDC_STATIC,567,259,119,8
+    EDITTEXT        IDC_INSERT_PIX,745,258,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ÂïÈû Á¤µµ[äâß¿ïïÓø](pix)",IDC_STATIC,567,229,85,8
+    EDITTEXT        IDC_INSERT_ANGLE_DIFF,745,228,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "/",IDC_STATIC,790,214,8,8
+    EDITTEXT        IDC_INSERT_ANGLE_CONTINUOUS,798,212,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_INSERT_ANGLE_GAP,745,212,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "°Ë»ç ±æÀÌ[Ëþö´íþÓø](pix) / Áö¼Ó ±æÀÌ[Ö§áÙíþÓø](pix)",IDC_STATIC,567,215,175,8
+END
+
+IDD_PRE_INSPECTION DIALOGEX 0, 0, 601, 345
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "ÀÌ¹ÌÁö ·Îµå(öèËÒç¯ßÀ)",IDC_LOADIMAGE,483,18,101,14
+    PUSHBUTTON      "°Ë»çÄ¡ ¼³Á¤(àâïÒËþö´óÑâ¦)",IDC_SET_VALUE,483,36,101,14
+    PUSHBUTTON      "1¹ø ROI ¼³Á¤(àâïÒð¯ìéROI)",IDC_ROI1,483,54,101,14
+    PUSHBUTTON      "2¹ø ROI º¹»ç(ÜÖð¤ð¯ì£ROI)",IDC_ROI2,447,324,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "3¹ø ROI º¹»ç(ÜÖð¤ð¯ß²ROI)",IDC_ROI3,442,324,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "DB ÀúÀå(DB Save)",IDC_SAVEDB,484,224,100,14
+    PUSHBUTTON      "DB ·Îµå(DB Load)",IDC_DBLOAD,485,241,99,14
+    PUSHBUTTON      "¸ðÀÇ °Ë»ç(Ù¼ëôËþö´)",IDC_TEST,485,187,99,31
+    GROUPBOX        "°Ë»ç ¿µ¿ª ¼³Á¤(àâïÒËþö´óÑâ¦)",IDC_STATIC,7,304,386,29
+    PUSHBUTTON      "¸¶±¸¸®(Ó®Ôé)",IDC_MAGURI,18,314,50,14,WS_DISABLED
+    PUSHBUTTON      "Ãà°ü(õêÎ·)",IDC_CHUCK,69,314,50,14,WS_DISABLED
+    PUSHBUTTON      "ÀÚ¹Ù¶ó(ã¨õÔ)",IDC_JABARA,120,314,54,14,WS_DISABLED
+    PUSHBUTTON      "Æø",IDC_POK,426,309,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "¿ª»ð(Óîßºìý)",IDC_INSERT,174,314,53,14,WS_DISABLED
+    PUSHBUTTON      "ÁÂÃø°¢",IDC_ANGLE_LEFT,404,324,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "¿ìÃø°¢",IDC_ANGLE_RIGHT,441,293,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "4¹ø ROI º¹»ç(ÜÖð¤ð¯ÞÌROI)",IDC_ROI4,444,324,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "TEST",IDC_BTN_TTEST,485,268,99,14
+    PUSHBUTTON      "5¹ø ROI º¹»ç(ÜÖð¤ð¯çéROI)",IDC_ROI5,441,324,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "1¹ø ROI º¹»ç(ÜÖð¤ð¯ìéROI)",IDC_ROI1_1,485,154,99,14
+    PUSHBUTTON      "ÆÄ¶ó¹ÌÅÍ¼³Á¤(àâïÒóÑâ¦)",IDC_SET_VALUE_PARAM,485,284,99,14
+    CONTROL         "1¹ø¿µ¿ª º¸±â(øúãÆð¯ìéROI)",IDC_CHK_ROI01,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,416,328,110,10
+    CONTROL         "2¹ø¿µ¿ª º¸±â(øúãÆð¯ì£ROI)",IDC_CHK_ROI02,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,400,328,110,10
+    CONTROL         "3¹ø¿µ¿ª º¸±â(øúãÆð¯ß²ROI)",IDC_CHK_ROI03,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,403,328,110,10
+    CONTROL         "4¹ø¿µ¿ª º¸±â(øúãÆð¯ÞÌROI)",IDC_CHK_ROI04,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,402,328,110,10
+    CONTROL         "5¹ø¿µ¿ª º¸±â(øúãÆð¯çéROI)",IDC_CHK_ROI05,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,405,328,110,10
+    PUSHBUTTON      "¿¡Æ¼ÄÏ",IDC_ETIQUETTE,360,300,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "°Ë»ç °á°ú(Ëþö´Ì¿ÍýÝÂà°)",IDC_BUTTON_INSP_RESULT,485,301,99,14
+    PUSHBUTTON      "ÁÂÃø ¿¡Æ¼ÄÏ(ñ§èêðË)",IDC_ETQ_LEFT,228,314,78,14,WS_DISABLED
+    PUSHBUTTON      "¿ìÃø ¿¡Æ¼ÄÏ(éÓèêðË)",IDC_ETQ_RIGHT,307,314,81,14,WS_DISABLED
+END
+
+IDD_RESULT DIALOGEX 0, 0, 408, 189
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "°Ë»ç °á°ú"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,351,7,50,14
+    CONTROL         "",IDC_RESULT,"RICHEDIT",TCS_VERTICAL | TCS_MULTISELECT | WS_BORDER | WS_TABSTOP,7,7,341,175
+END
+
+IDD_DIALOG1 DIALOG  0, 0, 187, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    GROUPBOX        "Ä«¸Þ¶ó ¼±ÅÃ",IDC_STATIC,10,3,113,84,WS_GROUP
+    CONTROL         "1¹ø Ä«¸Þ¶ó",IDC_CAM1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,19,54,10
+    CONTROL         "2¹ø Ä«¸Þ¶ó",IDC_CAM2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,35,54,10
+END
+
+IDD_DLG_TRIGGER_SETTING DIALOG  0, 0, 160, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Trigger Velocity Setting"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Trigger 1",IDC_STATIC,60,16,30,8
+    LTEXT           "Trigger 2",IDC_STATIC,60,30,30,8
+    LTEXT           "Trigger 3",IDC_STATIC,60,44,30,8
+    LTEXT           "Trigger 4",IDC_STATIC,60,58,30,8
+    EDITTEXT        IDC_ED_TRI1,97,13,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_TRI2,97,27,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_TRI3,97,41,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_TRI4,97,55,28,14,ES_AUTOHSCROLL
+    LTEXT           "RPM",IDC_STATIC,17,17,17,8
+    EDITTEXT        IDC_ED_RPM,14,28,28,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Àû¿ë",IDC_BTN_TRISET,16,46,34,13
+    PUSHBUTTON      "´Ý±â",IDC_BTN_TRISETCLOSE,16,62,34,13
+    PUSHBUTTON      "Set",IDC_BTN_SETTRI1,129,17,18,49
+END
+
+IDD_SET_COLOR DIALOGEX 0, 0, 203, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "»ö»ó »¡´ë ¼³Á¤(ýåÎ·?ßäàâïÒ)"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,146,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,146,24,50,14
+    GROUPBOX        "³»Ãø Åõ¸í ¿©ºÎ(ýåÎ·?ßäàâïÒ)",IDC_STATIC,7,3,134,40,WS_GROUP
+    CONTROL         "ÀÏ¹Ý(ìéÚõ)",IDC_TRAN_NORM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,14,52,10
+    CONTROL         "Åõ¸í(÷âÙ¥)",IDC_TRANS_TRANS,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,26,52,10
+    GROUPBOX        "¿ÜÃø »ö»ó Á¾·ù(èâÎ·?ßäðú×¾)",IDC_STATIC,7,43,134,49
+    CONTROL         "ÀÏ¹Ý(ìéÚõ)",IDC_COLOR_NORM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,51,52,10
+    CONTROL         "Àû»ö °è¿­(?ßäÍ§Öª)",IDC_COLOR_RED,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,61,82,10
+    CONTROL         "³ì»ö °è¿­(?ßäÍ§Öª)",IDC_COLOR_GREEN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,71,82,10
+    CONTROL         "Ã»»ö °è¿­(ÕÀßäÍ§Öª)",IDC_COLOR_BLUE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,81,86,10
+    GROUPBOX        "TE/PE ¼³Á¤(TE/PEàâïÒ)",IDC_STATIC,7,93,135,40
+    CONTROL         "TE(ÀÚ¹Ù¶ó¾øÀ½)(TE(êóã¨?))",IDC_TEPE_TE,"Button",BS_AUTORADIOBUTTON,7,104,105,10
+    CONTROL         "PE(ÀÚ¹Ù¶óÀÖÀ½)(PE(?êóã¨?))",IDC_TEPE_PE,"Button",BS_AUTORADIOBUTTON,7,116,110,10
+    GROUPBOX        "¿¡Æ¼ÄÏ À¯¹« °Ë»ç(èêðËêóÙíËþö´)",IDC_STATIC,7,135,134,31
+    CONTROL         "¿¡Æ¼ÄÏ °Ë»ç »ç¿ë(ÞÅéÄèêðËËþö´)",IDC_CHK_INSP_ETQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,149,128,10
+END
+
+IDD_DLG_PARAMETER DIALOGEX 0, 0, 575, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "ÆÄ¶ó¹ÌÅÍ ¼³Á¤"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    LTEXT           "¸ÞÀÎ ¹à±â ÃßÃâ °ª[ð«ö¢ÕÕÓøñ«â¦ö·](Threshold)",IDC_STATIC,17,28,160,8
+    LTEXT           "¹à±â Æ÷È­½Ã ÀÌ¹° °Ë»ç ¹«½Ã °ª[ÕÕÓøøéûúãÁûìÕÔì¶ÚªÕÕÓø]",IDC_STATIC,17,77,199,8
+    LTEXT           "Áß´Ü ¿ìÃø ºñ °Ë»ç¿µ¿ª(Æø,ÂïÈû)[ñéÓ®éÓÜ«ÞªËþö´ÖÅæ´(Î°,äâß¿)]",IDC_STATIC,304,24,215,8
+    LTEXT           "Ãà°ü ¿ìÃø ºñ °Ë»ç¿µ¿ª(Æø)[õêÎ·éÓÜ«ÞªËþö´ÖÅæ´(Î°)]",IDC_STATIC,304,36,179,8
+    LTEXT           "Ãà°ü ÁÂÃø ºñ °Ë»ç¿µ¿ª(Æø,ÂïÈû)[õêÎ·ñ§Ü«ÞªËþö´ÖÅæ´(Î°,äâß¿)]",IDC_STATIC,304,48,215,8
+    LTEXT           "¸¶±¸¸® ¿·¸é ÆÄÀÓ Á¤µµ(Ó®Ôéö°Øüäâß¿ïïÓø)",IDC_STATIC,304,60,147,8
+    LTEXT           "[¿¡Æ¼ÄÏ~½ºÅäÆÛ °Å¸® ÇÈ¼¿]",IDC_STATIC,303,113,92,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[¿¡Æ¼ÄÏ °ËÃâ ¹üÀ§ ÇÈ¼¿]",IDC_STATIC,277,130,83,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[¿¡Æ¼ÄÏ ±æÀÌ ÇÈ¼¿]",IDC_STATIC,294,135,65,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[¸¶±¸¸® ³¡´ÜºÎÅÍ ºñ °Ë»ç¿µ¿ª(Ó®ÔéÞªËþö´ÖÅæ´)]",IDC_STATIC,15,146,167,8
+    LTEXT           "[ÀÚ¹Ù¶ó ÁÖº¯ ºñ °Ë»ç(ã¨õÔñ²êÌÞªËþö´ÖÅæ´)]",IDC_STATIC,15,158,151,8
+    LTEXT           "[Ãà°ü ¿ìÃø ºñ °Ë»ç¿µ¿ª(õêÎ·éÓÜ«ÞªËþö´ÖÅæ´)]",IDC_STATIC,15,170,159,8
+    LTEXT           "[³»Ãø ÁÂ¿ì ÇÕ ºñ°Ë»ç ¿µ¿ª]",IDC_STATIC,239,132,93,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[Áß´Ü Æø ÁÙÀÌ±â(ñéÓ®Êõá´Î°Óø)]",IDC_STATIC,15,182,109,8
+    LTEXT           "Åõ¸í »¡´ë°¡ ROI Â÷ÁöÇÏ´Â ºñÀ²[÷âÙ¥ýåÎ·î¤ROIï¿êóØüîÝÝïáã](%)",IDC_STATIC,17,112,223,8
+    LTEXT           "[³»Ãø »óºÎ±âÁØ ºñ °Ë»ç ¿µ¿ª]",IDC_STATIC,280,131,101,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[³»Ãø »óÇÏ °Ë»ç ¿µ¿ª ³ôÀÌ]",IDC_STATIC,276,133,93,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Åõ¸í ³»Ãø ¸¶±¸¸®»ßÁü ¹à±â ÃßÃâ °ª[÷âÙ¥Ò®Î·ÔÍõóãÁÕÕÓø]",IDC_STATIC,17,88,199,8
+    LTEXT           "[Á¦Ç°°ú ÀÌ¹ÌÁö ¼¾ÅÍÂ÷ÀÌ°ª]",IDC_STATIC,293,129,97,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "¸¶±¸¸®ºÎ Æ¯º° ¹à±â ÃßÃâ°ª[Ó®Ôéð«ö¢ÕÕÓøâ¦ö·](%)",IDC_STATIC,17,40,173,8
+    LTEXT           "Ãà°üºÎ Æ¯º° ¹à±â ÃßÃâ°ª[õêÎ·ð«ö¢ÕÕÓøâ¦ö·](%)",IDC_STATIC,17,51,165,8
+    LTEXT           "³»Ãø Æ¯º° ¹à±â ÃßÃâ°ª[Ò®Î·ð«ö¢ÕÕÓøâ¦ö·](%)",IDC_STATIC,17,62,157,8
+    LTEXT           "[Ä«¸Þ¶ó °ÔÀÎ]",IDC_STATIC,298,129,47,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[Ãà°ü ÁÂ¿ì Æø Æò±Õ Á¦ÇÑÄ¡]",IDC_STATIC,232,131,93,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[Ä«¸Þ¶ó ¼ÅÅÍ ½ºÇÇÆ®]",IDC_STATIC,251,127,73,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[Ãà°ü ²©ÀÌ´Â ºÎºÐ ±â¿ï±â]",IDC_STATIC,270,135,91,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "[»ö»¡´ë Ãà°ü ²©ÀÌ´Â ºÎºÐ ±â¿ï±â]",IDC_STATIC,286,131,117,8,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "ÀÌ¹° °Ë»ç ÆÄ¶ó¹ÌÅÍ[ì¶ÚªËþö´óÑâ¦]",IDC_STATIC,7,135,284,62
+    GROUPBOX        "ÂïÈû °Ë»ç ÆÄ¶ó¹ÌÅÍ(äâß¿Ëþö´óÑâ¦)",IDC_STATIC,294,14,276,58
+    GROUPBOX        "¹à±â ÃßÃâ ÆÄ¶ó¹ÌÅÍ[ð«ö¢ÕÕÓøóÑâ¦]",IDC_STATIC,7,14,284,113
+    EDITTEXT        IDC_ED_THRES_MAIN,250,26,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_THRES_MAGURI,250,38,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_THRES_CHUCK,250,50,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_THRES_ANGLE,250,62,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_THRES_SATURATION,250,74,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_THRES_TRANSMAGURI,250,86,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_IMUL_MAGURI,250,144,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_IMUL_JABARA,250,156,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_IMUL_CHUCKSTOP,250,168,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_IMUL_INSERTNOINSPECT,318,156,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_IMUL_CHUCKLR,250,180,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_IMUL_UPDOWN,250,110,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_IMUL_INSERTUPDOWN,339,143,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_IMUL_INSERT_HEIGHT,322,154,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETIQ_CHABRIGHT,534,21,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_ETIQ_LINECNT,534,33,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_ETIQ_DEVIATION,534,45,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_ETIQ_JABARAETIQ,534,57,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_ETIQ_ETIQSTOP,302,172,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETIQ_INSPECTAREA,307,174,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETIQ_LENGTH,313,148,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETC_IMGCENTER,305,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETC_CAMERAGAIN,303,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETC_CHUCKAVG,300,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETC_CAMSHUTTER,295,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETC_CHUCKUPSCALE,298,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_ETC_CHUCKDOWNSCALE,309,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Àû¿ë(îêéÄ)",IDC_BTN_APPLY,466,164,50,33
+    PUSHBUTTON      "´Ý±â(Î¼øÍ)",IDC_BTN_CANCEL,520,165,50,32
+    LTEXT           "Åõ¸í ³»Ãø »ðÀÔºÎ ¹à±â ÃßÃâ °ª(÷âÙ¥Ò®Î·ßºìýÖÅæ´ÕÕÓø)",IDC_STATIC,17,99,191,8
+    EDITTEXT        IDC_ED_THRES_TRANSINSERT,250,98,32,12,ES_AUTOHSCROLL
+    CONTROL         "Æ®¸®°Å ¸ðµå º¯È¯ »ç¿ë",IDC_CHK_USETRIGGER14,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,477,146,94,10
+    LTEXT           "[Ãà¼Ò ³Êºñ(pixel)]",IDC_STATIC,292,130,59,8,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_ED_IMUL_CHUCKWIDTH_LIMIT,300,185,32,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "»ö »¡´ë Threshold(óôßäýåÎ·ÕÕÓø?ö·)",IDC_STATIC,294,75,277,36
+    LTEXT           "[»ö »¡´ë Threshold ¼öÄ¡](R, G, B)[óôßäýåÎ·ÕÕÓøâ¦ö·(îå, ÒÑ, Ñü))]",IDC_STATIC,305,86,215,8
+    EDITTEXT        IDC_ED_COLORSTRAW_THRES01,324,95,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_COLORSTRAW_THRES02,357,95,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_COLORSTRAW_THRES03,391,95,32,12,ES_AUTOHSCROLL
+    CONTROL         "14¹ø ¸ðµå",IDC_RADIO_TRI14,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED | WS_GROUP,300,157,50,10
+    CONTROL         "15¹ø ¸ðµå",IDC_RADIO_TRI15,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,521,118,50,10
+END
+
+IDD_DLG_COPYROI DIALOGEX 0, 0, 141, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_VSCROLL | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "2¹ø ROI º¹»ç(ÜÖð¤ð¯ì£ROI)",IDC_ROIBTN_2,14,14,108,17
+    PUSHBUTTON      "3¹ø ROI º¹»ç(ÜÖð¤ð¯ß²ROI)",IDC_ROIBTN_3,14,32,108,17
+    PUSHBUTTON      "4¹ø ROI º¹»ç(ÜÖð¤ð¯ÞÌROI)",IDC_ROIBTN_4,14,51,108,17
+    PUSHBUTTON      "5¹ø ROI º¹»ç(ÜÖð¤ð¯çéROI)",IDC_ROIBTN_5,14,70,108,17
+    PUSHBUTTON      "6¹ø ROI º¹»ç(ÜÖð¤ð¯×¿ROI)",IDC_ROIBTN_6,14,88,108,17
+    PUSHBUTTON      "7¹ø ROI º¹»ç(ÜÖð¤ð¯öÒROI)",IDC_ROIBTN_7,14,107,108,17
+    PUSHBUTTON      "8¹ø ROI º¹»ç(ÜÖð¤ð¯ø¢ROI)",IDC_ROIBTN_8,14,126,108,17
+    PUSHBUTTON      "9¹ø ROI º¹»ç(ÜÖð¤ð¯ÎúROI)",IDC_ROIBTN_9,14,145,108,17
+    CONTROL         "",IDC_CHECK_ROI2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,18,9,10
+    CONTROL         "",IDC_CHECK_ROI3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,36,9,10
+    CONTROL         "",IDC_CHECK_ROI4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,55,9,10
+    CONTROL         "",IDC_CHECK_ROI5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,74,9,10
+    CONTROL         "",IDC_CHECK_ROI6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,92,9,10
+    CONTROL         "",IDC_CHECK_ROI7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,111,9,10
+    CONTROL         "",IDC_CHECK_ROI8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,129,9,10
+    CONTROL         "",IDC_CHECK_ROI9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,148,9,10
+    CONTROL         "1¹ø ¿µ¿ª º¸±â(øúãÆð¯ìéROI)",IDC_CHECK_ROI1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,2,118,10
+END
+
+IDD_DLG_VIEWROI DIALOGEX 0, 0, 142, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_INSP_RESULT DIALOGEX 0, 0, 591, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "°Ë»ç °á°ú"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RICHEDIT_INSP_RESULT,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,577,224
+END
+
+IDD_DLG_RPM DIALOGEX 0, 0, 133, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RPM ¼³Á¤"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "È®ÀÎ(ü¬ìã)",IDOK,42,42,36,14
+    PUSHBUTTON      "Ãë¼Ò",IDCANCEL,86,42,36,14
+    LTEXT           "RPM",IDC_STATIC,24,20,15,8
+    EDITTEXT        IDC_EDIT_RPM,46,19,56,13,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DLG_ERROR_LIST DIALOGEX 0, 0, 340, 340
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ºÒ·® ³»¿ª(ÌÀùè÷ÖÍª)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DATETIME_START,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,49,7,100,15
+    CONTROL         "",IDC_DATETIME_END,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,169,7,100,15
+    LTEXT           "~",IDC_STATIC,157,9,8,8
+    LTEXT           "³¯Â¥ ¼±ÅÃ",IDC_STATIC,7,10,38,8
+    PUSHBUTTON      "ÀÏÁÖÀÏ(ìéñ²)",IDC_BTN_WEEK,279,41,54,30
+    PUSHBUTTON      "ÇÏ·ç(ìéô¸)",IDC_BTN_DAY,279,7,54,30
+    PUSHBUTTON      "Á¶È¸(?âó)",IDC_BTN_SEARCH,279,76,54,30
+    LTEXT           "ÃÑ °³¼ö(?â¦Õá)",IDC_STATIC,17,52,58,8
+    LTEXT           "¾çÇ°(ÕÞù¡)",IDC_STATIC,17,67,41,8
+    LTEXT           "ºÒ·®Ç°(ÜôÕÞù¡)",IDC_STATIC,17,84,62,8
+    LTEXT           "°¢µµ ºÒ·®(ÊÇÓøÜôÕÞ)",IDC_STATIC,17,131,75,8
+    LTEXT           "Æø ºÒ·®(Î°ÓøÜôÕÞ)",IDC_STATIC,17,146,72,8
+    LTEXT           "¸¶±¸¸® ºÒ·®(Ó®ÔéÜôÕÞ)",IDC_STATIC,17,162,80,8
+    LTEXT           "ÀÚ¹Ù¶ó ºÒ·®(ã¨?ÜôÕÞ)",IDC_STATIC,17,226,83,8
+    LTEXT           "Ãà°ü ºÒ·®(?Î·ÜôÕÞ)",IDC_STATIC,17,179,77,8
+    LTEXT           "»ðÀÔ ºÒ·®(?ìýÜôÕÞ)",IDC_STATIC,17,195,77,8
+    LTEXT           "¿¡Æ¼ÄÏ ºÒ·®(èêðËÜôÕÞ)",IDC_STATIC,17,211,86,8
+    GROUPBOX        "[ÀüÃ¼ ³»¿ª](îï÷ÖÍª)",IDC_STATIC,7,36,262,67
+    GROUPBOX        "[ºÒ·® »ó¼¼ ³»¿ª](ÌÀùèßÙá¬ãáãÓ)",IDC_STATIC,7,114,284,207
+    EDITTEXT        IDC_EDIT_TOTAL,76,49,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_OK,75,65,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG,75,82,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_OK_PER,171,66,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_PER,171,82,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_ANGLE,100,126,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_POK,100,142,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_MAGURI,100,158,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_ANGLE_PER,196,126,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_POK_PER,196,142,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_MAGURI_PER,196,158,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_CHUCK,100,174,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_INSERT,100,190,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_ETIQUETTE,100,206,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_CHUCK_PER,196,174,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_INSERT_PER,196,190,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_ETIQUETTE_PER,196,206,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_JABARA,100,223,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_JABARA_PER,196,223,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ÀÌ¹°Áú ºÒ·®(ì¶ÚªÜôÕÞ)",IDC_STATIC,18,242,83,8
+    EDITTEXT        IDC_EDIT_NG_IMUL,100,240,88,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NG_IMUL_PER,196,240,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "»ó´Ü ÀÌ¹°(ß¾Ó®ÜôÕÞ)",IDC_STATIC,20,262,84,8
+    EDITTEXT        IDC_EDIT_NG_IMUL_TOP,109,260,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Áß´Ü ÀÌ¹°(ñéÓ®ÜôÕÞ)",IDC_STATIC,161,262,78,8
+    EDITTEXT        IDC_EDIT_NG_IMUL_MID,238,261,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ãà ÀÌ¹°(?Î·ì¶Úª)",IDC_STATIC,161,280,77,8
+    EDITTEXT        IDC_EDIT_NG_IMUL_CHUCK,238,277,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ÀÚ¹Ù¶ó ÀÌ¹°(ã¨?ì¶Úª)",IDC_STATIC,19,279,87,8
+    EDITTEXT        IDC_EDIT_NG_IMUL_JABARA,109,278,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "»ðÀÔ ÀÌ¹°(?ìýì¶Úª)",IDC_STATIC,19,297,78,8
+    EDITTEXT        IDC_EDIT_NG_IMUL_INSERT,109,296,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ñ¢Êà",IDC_STATIC,7,20,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "SeoilVision MFC ÀÀ¿ë ÇÁ·Î±×·¥"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SeoilVision"
+            VALUE "LegalCopyright", "Copyright (C) 2008"
+            VALUE "OriginalFilename", "SeoilVision.EXE"
+            VALUE "ProductName", "SeoilVision ÀÀ¿ë ÇÁ·Î±×·¥"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SEOILVISION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_INSPECT_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 846
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 449
+    END
+
+    IDD_PRE_INSPECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 594
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DLG_TRIGGER_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_SET_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DLG_PARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 571
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_DLG_COPYROI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DLG_VIEWROI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DLG_INSP_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 584
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_DLG_RPM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DLG_ERROR_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 333
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "ÆÄÀÏ(ÙþËì)"
+    BEGIN
+        MENUITEM "¼³Á¤ÆÄÀÏ ¿­±â(öèËÒàâïÒÙþËì)",             IDM_FILE_OPEN
+        MENUITEM "ÆÄ¶ó¹ÌÅÍ °»½Å(ËÖãæóÑâ¦)",               IDM_FILE_PARAMETER_NEWER
+        MENUITEM "Á¾·á(Ì¿áÖ)",                      IDM_FILE_QUIT
+    END
+    POPUP "Ä«¸Þ¶ó(ßÓÑ¦)"
+    BEGIN
+        MENUITEM "Ä«¸Þ¶ó ¼³Á¤(àâïÒßÓÑ¦)",                IDM_CAM_SETTING
+        MENUITEM "¹è°æÀÌ¹ÌÁö Á¤Áö(ïÎò­ÛÎÌØÓñø¸ï®üµ)",          IDM_CAMERA_SET2
+        MENUITEM SEPARATOR
+        MENUITEM "Á¶¸í ¼³Á¤(àâïÒðÎÙ¥)",                 IDM_CAM_LIGHT
+    END
+    POPUP "°Ë»ç(Ëþö´)"
+    BEGIN
+        MENUITEM "°Ë»ç ¼³Á¤(àâïÒËþö´óÑâ¦)",               IDM_INSP_SETTING
+        MENUITEM "°Ë»ç ½ÃÀÛ(Ëþö´ËÒã·)",                 IDM_INSP_START
+        MENUITEM "»ö»ó ¹× TE/PE  ¼³Á¤(äÔßäÐàTE/PEàâïÒ)",  IDM_INSP_SETCOLOR
+        POPUP "¼Öº§ºê ÄÑ±â/²ô±â(Sol Valve On/Off)"
+        BEGIN
+            MENUITEM "¼Öº§ºê ÄÑ±â(Sol Valve On)",        IDM_SOL_ON
+            MENUITEM "¼Öº§ºê ²ô±â(Sol Valve Off)",       ID_SOL_OFF
+        END
+        MENUITEM "RPM ¼³Á¤(àâïÒ RPM)",              IDM_RPM
+        MENUITEM SEPARATOR
+        MENUITEM "½Ç½Ã°£ ¿µ»ó º¸±â(ãùãÁàîç¯)",             IDM_INSP_VIEW
+        MENUITEM "°á°ú º¸±â(ÌÀùè÷ÖÍª)",                 IDM_INSP_RESULT
+        MENUITEM "ÂüÁ¶¿ë ÀÌ¹ÌÁö Ãëµæ(100Àå)(ö¢Ôð100ø¸ç¯ßÀ)",  IDM_INSP_SAVE
+    END
+    POPUP "Test ¸ðµå(Test Mode)"
+    BEGIN
+        MENUITEM "ºÒ·® ÀÌ¹ÌÁö ÀúÀå(ÜÁðíÌÀùèç¯ßÀ)",           IDM_TEST_SAVEIMAGE
+        MENUITEM "ºÒ·®ºÎºÐ ÀÌ¹ÌÁö ÀúÀå(ÜÁðíÌÀùèÝ»êÈç¯ßÀ)",       IDM_TEST_SAVEREJECTIMAGE
+        MENUITEM "¸ðµç ÀÌ¹ÌÁö ÀúÀå(ÜÁðíá¶êóç¯ßÀ)",           IDM_TEST_SAVEGRAB_IMAGE
+        MENUITEM "Sol Å×½ºÆ®(ï³í¸ÛìãËéÄ)",              IDM_TEST_SOL1
+        POPUP "Test Tower Lamp"
+        BEGIN
+            MENUITEM "Red",                         IDM_TEST_TW_RED
+            MENUITEM "Yellow",                      IDM_TEST_TW_YELLOW
+            MENUITEM "Green",                       IDM_TEST_TW_GREEN
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "SeoilVision Á¤º¸(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\SeoilVision.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
